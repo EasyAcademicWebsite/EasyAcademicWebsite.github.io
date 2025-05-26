@@ -83,6 +83,10 @@ a {
   font-family: 'Lato', Verdana, Helvetica, Calibri;
 }
 
+.org-left {
+    padding: 10px;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, Calibri;
   font-size: 14px;

@@ -36,17 +36,17 @@
 #+html: <div class="row"> <div class="col-md-4 col-md-offset-4 text-center">
 #+attr_html: :class nav nav-pills nav-justified
 - @@html:<a href="https://arxiv.org"><image src="imgs/thumbnail.jpg" height="60px"><h4><strong>Paper</strong></h4></a>@@
-- @@html:<a href="https://github.com"><image src="imgs/GitHub-Mark.png" height="60px"><h4><strong>Code</strong></h4></a>@@
+- @@html:<a href="https://github.com/EasyAcademicWebsite/EasyAcademicWebsite.github.io"><image src="imgs/GitHub-Mark.png" height="60px"><h4><strong>Code</strong></h4></a>@@
 - @@html:<a href="https://huggingface.co"><image src="imgs/huggingface.svg" height="60px"><h4><strong>Models</strong></h4></a>@@
 #+html: </div></div>
 
 #+html: <div class="row"> <div class="col-md-8 col-md-offset-2">
 
-#+BEGIN_export html
+#+begin_export html
 <div style="position:relative;padding-top:56.25%;">
     <iframe src="https://www.youtube.com/embed/aKydtOXW8mI" width="560" height="315" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
-#+END_export
+#+end_export
 
 
 * 
@@ -55,7 +55,13 @@
 
 Insert your abstract here.
 
+** Instructions
+
+To set this template up with your own website, follow the instructions [[https://docs.google.com/document/d/15qgsmYzbRwnBhwSdTgfuzuxqGvH4fj7BO0rLwTrM3Dc/edit?usp=sharing][here]].
+
 ** Cool Features
+
+Review the [[https://orgmode.org/manual/HTML-Export.html][Org Mode Documentation]] for a more comprehensive list of features.
 
 *** Math Equations
 
@@ -69,7 +75,7 @@ Alternatively, you can use latex begin and end equation =\begin{equation}1 + 1 =
 
 You can insert an image using double square braces, like =[[./imgs/oxford_logo.png]]=. Specify html attributes beforehand, like width.
 
-#+ATTR_HTML: :width 100%
+#+attr_html: :width 100%
 [[./imgs/oxford_logo.png]]
 
 *** Code
@@ -84,11 +90,11 @@ You can insert code using begin\under{}src and end\under{}src with a language:
 
 *** Monospace Example
 
-You can use BEGIN\under{}EXAMPLE to have a block of monospace text
+You can use begin\under{}example to have a block of monospace text
 
-#+BEGIN_EXAMPLE
+#+begin_example
 Like this example
-#+END_EXAMPLE
+#+end_example
 
 *** Link Example
 
@@ -102,9 +108,9 @@ For a single HTML line, you can use =#+html:= followed by your line
 
 #+html: <font color="blue"> Like this line in html </font>
 
-You can insert any block of HTML by surrounding your code with #+BEGIN\under{}export html and #+END\under{}export, which can include javascript.
+You can insert any block of HTML by surrounding your code with #+begin\under{}export html and #+end\under{}export, which can include javascript.
 
-#+BEGIN_export html
+#+begin_export html
 <script>
 function changeButtonText(button) {
 button.textContent = "You clicked me!";
@@ -112,17 +118,20 @@ button.textContent = "You clicked me!";
 </script>
 
 <button onclick="changeButtonText(this)">Click Me</button>
-#+END_export
+#+end_export
+
 
 ** Example Websites
 
 The websites below were created using a similar style to this website. Feel free to use them as reference when trying to incorporate specific features.
 
+#+attr_html: :border 1 :rules all :frame border
 | Name                                                                                        | Website                                         | Code |
 |---------------------------------------------------------------------------------------------+-------------------------------------------------+------|
 | Diverse Conventions for Human-AI Interaction                                                | [[https://iliad.stanford.edu/Diverse-Conventions/]] | [[https://github.com/Stanford-ILIAD/Diverse-Conventions/tree/website][Code]] |
 | Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning       | [[https://socialdeductionllm.github.io/]]           | [[https://github.com/SocialDeductionLLM/SocialDeductionLLM.github.io/tree/main][Code]] |
-| LOB-Bench: Benchmarking Generative AI for Finance – an Application to Limit Order Book Data | [[https://lobbench.github.io/]]                     | [[https://github.com/lobbench/lobbench.github.io][Code]]     |
+| LOB-Bench: Benchmarking Generative AI for Finance – an Application to Limit Order Book Data | [[https://lobbench.github.io/]]                     | [[https://github.com/lobbench/lobbench.github.io][Code]] |
+| Easy Academic Website Template                                                              | [[https://easyacademicwebsite.github.io/]]          | [[https://github.com/EasyAcademicWebsite/EasyAcademicWebsite.github.io][Code]] |
 
 
 
@@ -131,7 +140,7 @@ The websites below were created using a similar style to this website. Feel free
 #+html:</div></div></div>
 
 
-#+BEGIN_export html
+#+begin_export html
 <div class="row"><div class="col-md-8 col-md-offset-2">
 <h3>Citation</h3>
 <div class="form-group col-md-10 col-md-offset-1"><textarea id="bibtex" class="form-control" readonly>
@@ -150,7 +159,7 @@ The websites below were created using a similar style to this website. Feel free
 <br><br>
 The website template was borrowed from <a href="http://easyacademicwebsite.github.io">Easy Academic Website Template</a> and <a href="http://jonbarron.info/">Jon Barron</a>
 </p></div></div>
-#+END_export
+#+end_export
 
 # Local Variables:
 # eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
